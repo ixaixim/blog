@@ -14,5 +14,5 @@
         /* media query: different style for different media types/devices. 
         We readjust size of font when we are within a certain width. */
         @media (max-width: 8.5in) {
-            article {grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;}
+            article {grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;}
         }
