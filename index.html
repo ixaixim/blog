@@ -14,32 +14,24 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/-debug.css">
     <link rel="stylesheet" href="styles/article.css">
-    <link rel="stylesheet" href="styles/article-image.css">
-
+    <link rel="stylesheet" href="styles/article-figure.css">
+    <link rel="stylesheet" href="styles/article-text.css">
 <!---------------------------------STYLE---------------------------------------->
 
 
     <style>
-/* adding visual breaks between paragraphs. */
-/* margin beneath: 2.4rem is about two lines. 
-        em: ratio relative to font size of its direct or nearest parent class.
-        rem: ratio relative to the html root font-size. */
-        h2, p:not(:last-child) {margin-bottom: 2.4rem; }
 
-/* font: fontweight(default 400) fontsize/lineheight */
-        h1      { font: 700 2.0rem/1.2 "Roboto"; color: hsl(000, 0%, 33%); }
-        h2      { font: 400 1.5rem/1.2 "Roboto"; color: hsl(000, 0%, 33%); }
-        time    { font: 700 1.0rem/1.2 "Roboto"; color: hsl(250, 100%, 83%); }
-        h3      { font: 700 1.0rem/1.2 "Roboto"; color: hsl(250, 100%, 67%); } 
-        p       { font: 400 1.0rem/1.5 "Roboto"; color: hsl(000, 0%, 33%); }  
+/* as done previously, we make of the class a flexbox and we say we want it centered. */
+.share {
+    display: flex;
+    justify-content: center;
+}
 
-/* for links we add a box-shadow below (inset option) the text */
-        a { box-shadow:  inset 0 -0.25em hsl(55, 100%, 75%); }
-      
-/* media query: for small screens the text changes */
-        @media (max-width: 8.5in) { :root { font-size: 18px; } }
-        @media (max-width: 5.0in) { :root { font-size: 16px; } }
-
+.share img {
+    padding:1.50rem;
+    width:  1.50rem;
+    height: 1.50rem;
+}
 
     </style>
 
@@ -59,13 +51,22 @@
                 This is a paragraph with a link to <a href="https://en.wikipedia.org/wiki/Carl_Sagan">Carl Sagan.</a>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nam quae iste officiis numquam tenetur corporis unde, voluptate architecto quibusdam, suscipit deleniti perspiciatis laborum excepturi obcaecati, delectus autem! Maxime non incidunt neque minima nostrum minus! Reiciendis, neque vero libero eveniet saepe sint asperiores dolorum natus unde quod laudantium deleniti, harum molestiae fuga ullam voluptatem? Laudantium architecto necessitatibus officiis aspernatur possimus tempore corrupti unde ut quod laboriosam, odit enim, quidem magni nesciunt a odio, doloribus labore obcaecati corporis commodi quisquam non iure hic veniam. Expedita voluptates itaque optio ut quaerat officia. Similique corporis tempora nesciunt itaque ullam deleniti, asperiores voluptas quidem!
             </p>
-
+        
+        <figure class="size-3">
+            <img src="https://mikeorzen.com/wp-content/uploads/2015/10/cosmos.jpg">
+        </figure>
+        <figcaption><p>The <em>Cosmos.</em></p></figcaption>
         <h3>Another paragraph in our blog. </h3>
             <p>
                 Ahem... this is <strong>strong.</strong>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo repudiandae at assumenda, vel delectus quidem amet provident perspiciatis vero sint. Esse ex error iure exercitationem commodi earum, et voluptatibus quidem debitis praesentium alias architecto, iusto suscipit? Quo animi id architecto, porro assumenda aspernatur. Reprehenderit odio maxime deserunt distinctio corporis, tempore eaque vel, officiis enim praesentium, dolores rem saepe dignissimos repudiandae neque. Corrupti adipisci, culpa nesciunt ad amet fugit eveniet quasi autem animi, ab pariatur mollitia? Sit, ut nostrum. Molestias exercitationem, facilis praesentium cumque omnis sit libero. Fugiat enim recusandae, eligendi ullam quod, rerum autem, ea distinctio laboriosam earum tempora qui.
             </p>
         
+            <!-- div is a generic container, we also put empty links at the moment. --> 
+            <div class="share">
+            <a href=""><img src="images/infinity_logo.png"></a>
+            <a href=""><img src="images/triangle_logo.png"></a>
+            </div>
     </article>
 </body>
 </html>

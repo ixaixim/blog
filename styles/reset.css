@@ -13,3 +13,6 @@ body * {
     text-decoration:    unset;
 
 }
+
+/* for a child of a figure (e.g. our img) we set a block: will cause to force other objects within a container on to a new line (i.e. will stack vertically)*/
+figure * { display: block; }

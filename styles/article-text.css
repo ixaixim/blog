@@ -1,0 +1,24 @@
+/* adding visual breaks between paragraphs. */
+/* margin beneath: 2.4rem is about two lines. 
+        em: ratio relative to font size of its direct or nearest parent class.
+        rem: ratio relative to the html root font-size. */
+        h2, p {margin-bottom: 2.4rem; }
+
+/* font: fontweight(default 400) fontsize/lineheight */
+        h1      { font: 700 2.0rem/1.2 "Roboto"; color: hsl(000, 000%, 33%); }
+        h2      { font: 400 1.5rem/1.2 "Roboto"; color: hsl(000, 000%, 33%); }
+        time    { font: 700 1.0rem/1.2 "Roboto"; color: hsl(250, 100%, 83%); }
+        h3      { font: 700 1.0rem/1.2 "Roboto"; color: hsl(250, 100%, 67%); } 
+        p       { font: 400 1.0rem/1.5 "Roboto"; color: hsl(000, 000%, 33%); }
+/* rule for figcaption paragraphs */
+        figcaption p { font 400  1.0rem/1.5 "Roboto"; color: hsl(000, 000%, 33%); }  
+
+/* for links we add a box-shadow below (inset option) the text */
+        a { box-shadow:  inset 0 -0.25em hsl(55, 100%, 75%); }
+      
+/* media query: for small screens the text changes */
+        @media (max-width: 8.5in) { :root { font-size: 18px; } }
+        @media (max-width: 5.0in) { :root { font-size: 16px; } }
+
+
+
