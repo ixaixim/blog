@@ -1,8 +1,9 @@
 /* important forbids to change certain properties, it is good for debugging */
+/* hsla: hue(color) saturation luminance alpha */
 body * {
     color:                  hsla(210, 100%, 100%, 0.88) !important;
-    background:             hsla(210, 100%, 50%, 0.33);
-    outline: 0.25rem solid hsla(210, 100%, 100%, 0.50);
+    background:             hsla(210, 100%, 50%, 0.33) !important;
+    outline: 0.25rem solid hsla(210, 100%, 100%, 0.50) !important;
 }
 
 .debug-center {

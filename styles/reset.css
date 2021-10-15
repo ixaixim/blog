@@ -1,6 +1,6 @@
 /* we don't want browser default css settings on root of tree*/
 
-:root { font: 20px/1.2 "Roboto", sans-serif; } 
+:root { font: 20px/24px "Roboto", sans-serif; } 
 
 /* apply properties to body and all of its children (e.g. paragraph) */
 body,
